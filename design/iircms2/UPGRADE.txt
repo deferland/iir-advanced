@@ -1,0 +1,36 @@
+Upgrading SkyBlueCanvas is simple because all of the files that are editable are contained in a single directory: /skyblue/data/
+
+When you upgrade to a new version of SkyBlueCanvas, you simply need to make a copy of this directory, install the new version following the instructions on the Installation page, then copy your data file back into /skyblue/data/.
+Step-by-step
+
+   1. Make a copy of /skyblue/data/
+   2. Copy the new version of SkyBlueCanvas into your web root
+   3. Delete the new /skyblue/data/ directory
+   4. Move your copied /skyblue/data/ director back into the SkyBlueCanvas root
+   5. Make sure the file permissions for /skyblue/data/ are set to 755 or, if you have shell access, change the owner and group to the web process (chown -R www:www skyblue)
+
+NOTE: If you are upgrading from an earlier version of SkyBlueCanvas, be sure to update the modules and plugins as well. To do this,
+copy the contents of /new_skyblue_package/data/modules/ and /new_skyblue_package/data/plugins/ into /your_web_root/data/modules/ and /your_web_root/data/plugins/ respectively.
+
+FTP Installation:
+
+   1. Download the tar file and extract the contents into a folder on your compter.
+   2. Log into your FTP account on your webserver and upload the SkyBlueCanvas code.
+   3. Change the file permissions of /skyblue/data/ to 755 (some servers may require 775) and apply the changes recursively to all directories and files in the /skyblue/data/ directory.
+   4. When you log in to the Admin Control Panel, go to Admin > Settings > Default Info, and enter the info in the form. This will enable emailing through your site and will set the full URL so that RSS feeds will point to your site pages.
+   5. That’s it. You’re done and are now ready to start adding text and pictures to your site.
+
+Command-line (shell) Installation:
+
+   1. Download the tar file and place it in the root of your new website.
+   2. Unpack the tarball (tar -zxf skyblue.tar.gz)
+   3. Rename the file /skyblue/htaccess.txt to .htaccess (dot htaccess) to enable SEF URLs
+   4. Change the owner/group of the directory contents (chown -R www:www `*`)
+   5. When you log in to the Admin Control Panel, go to Admin > Settings > Default Info, and enter the info in the form. This will enable emailing through your site and will set the full URL so that RSS feeds will point to your site pages.
+   6. That’s it. You’re done.
+
+HTACCESS
+
+The htaccess rules have changed in version 1.1 so you will need to update the file named .htaccess in your SkyBlueCanvas installation.
+
+Enjoy!

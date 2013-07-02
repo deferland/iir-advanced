@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A</key>
+	<array>
+		<string>gradually increase the tempo</string>
+		<string>slowly</string>
+		<string>swiftly</string>
+		<string>agitated</string>
+		<string>in the manner of</string>
+		<string>moderately fast</string>
+		<string>lively</string>
+		<string>the uppermost register, above the traditional range of the instrument. On saxophone, this is generally above F or F#, depending on the instrument’s keywork</string>
+		<string>refers to a particular range of voice, second highest of the standard four voice ranges between soprano and tenor</string>
+		<string>loving</string>
+		<string>moderately slow but moving, walking tempo</string>
+		<string>slightly fast than andante</string>
+		<string>animated, lively</string>
+		<string>airy, lyrical</string>
+		<string>very</string>
+		<string>in time</string>
+	</array>
+	<key>B</key>
+	<array>
+		<string>Barbarically or Heavy handed</string>
+		<string>refers to a particular range of voice, the lowest of all the standard four voice ranges</string>
+		<string>the pronounced rhythm of music;  one single stroke of a rhythmic accent</string>
+		<string>well</string>
+		<string>brillantly</string>
+		<string>vigour</string>
+	</array>
+	<key>C</key>
+	<array>
+		<string>the time signature 4/4, four beats per measure</string>
+		<string>with; used in very many musical directions, for example con allegrezza (with liveliness), con amore (with tenderness)</string>
+		<string>with love, tenderly</string>
+		<string>with spirirt, with vigour</string>
+		<string>with force</string>
+		<string>with fire, in a fiery manner</string>
+		<string>with motion</string>
+		<string>gradually increase volume</string>
+		<string>Same as the meter 2/2: two half-note (minim) beats per measure</string>
+	</array>
+	<key>D</key>
+	<array>
+		<string>from beginning</string>
+		<string>from sign</string>
+		<string>sweetly</string>
+	</array>
+	<key>E</key>
+	<array>
+		<string>energetic, strong</string>
+		<string>expiring, dying away</string>
+		<string>expressively</string>
+	</array>
+	<key>F</key>
+	<array>
+		<string>finished, closed; i.e., a rest or note is to be held for a duration that is at the discretion of the performer or conductor</string>
+		<string>end</string>
+		<string>a symbol (♭) that lowers the pitch of a note by a semitone</string>
+		<string>strong, loud</string>
+		<string>strong-gentle, loud then immediately soft</string>
+		<string>very loud</string>
+		<string>as loud as possible</string>
+		<string>instruction to play a note with strong, sudden emphasis</string>
+	</array>
+	<key>G</key>
+	<array>
+		<string>gently</string>
+		<string>cheerfully, playfully</string>
+		<string>grandly</string>
+		<string>slowly and seriously</string>
+	</array>
+	<key>I</key>
+	<array>
+		<string>opening selection</string>
+	</array>
+	<key>L</key>
+	<array>
+		<string>somewhat slowly; not as slow as largo</string>
+		<string>very slowly; slower than largo</string>
+		<string>broadly, slowly</string>
+		<string>in a smooth and connected manner</string>
+		<string>slow</string>
+	</array>
+	<key>M</key>
+	<array>
+		<string>but not too much</string>
+		<string>in a majestic and stately manner</string>
+		<string>marked; i.e., with accentuation, execute every note as if it were to be accented</string>
+		<string>a march</string>
+		<string>the period of a musical piece that encompasses a complete cycle of the time signature</string>
+		<string>less</string>
+		<string>half, moderately loud</string>
+		<string>moderately loud</string>
+		<string>moderately soft</string>
+		<string>in a moderate tempo</string>
+		<string>much</string>
+		<string>With motion or animation</string>
+	</array>
+	<key>N</key>
+	<array>
+		<string>a symbol that cancels the effect of a sharp or a flat</string>
+		<string>natural; i.e., discontinue a special effect</string>
+		<string>not</string>
+	</array>
+	<key>P</key>
+	<array>
+		<string>passionately</string>
+		<string>heavy and ponderous, burdened</string>
+		<string>very soft</string>
+		<string>soft</string>
+		<string>more</string>
+		<string>little by little</string>
+		<string>extremely quickly, as fast as possible</string>
+		<string>very quickly</string>
+		<string>first</string>
+	</array>
+	<key>R</key>
+	<array>
+		<string>gradually slower</string>
+		<string>an abbreviation for ritardando</string>
+		<string>gradually slowing down, decelerating</string>
+		<string>slightly speeding up or slowing down the tempo of a piece at the discretion of the soloist or the conductor; to rob</string>
+	</array>
+	<key>S</key>
+	<array>
+		<string>always</string>
+		<string>instruction to play a note with strong, sudden emphasis</string>
+		<string>a symbol (♯) that raises the pitch of the note by a semitone</string>
+		<string>sign </string>
+		<string>silence; i.e., without reverberations</string>
+		<string>similarly; i.e., continue applying the preceding directive</string>
+		<string>executed by more than one player or voice</string>
+		<string>alone; i.e., executed by a single instrument or voice</string>
+		<string>refers to a particular range of voice, the highest of the standard four voice ranges</string>
+		<string>making each note brief and detached, cut short and crisp</string>
+		<string>suddenly</string>
+	</array>
+	<key>T</key>
+	<array>
+		<string>silent; do not play</string>
+		<string>time, the speed of a piece of music</string>
+		<string>So as to be held for the full time value; sustained</string>
+		<string>refers to a particular range of voice, second lowest of the standard four voice ranges between alto and bass</string>
+		<string>calmly, peacefully</string>
+		<string>all or together; everyone</string>
+	</array>
+	<key>U</key>
+	<array>
+		<string>a little</string>
+	</array>
+	<key>V</key>
+	<array>
+		<string>vibrating, rapidly repeating slight alteration in the pitch of a note</string>
+		<string>lively, up-tempo</string>
+	</array>
+	<key>W</key>
+	<array>
+		<string>dance written in triple time, where the accent falls on the first beat of each measure</string>
+	</array>
+</dict>
+</plist>

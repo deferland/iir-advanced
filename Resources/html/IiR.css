@@ -1,0 +1,48 @@
+body {
+	background-color: #FFF3D9;
+	color: black;
+	margin: 0px;
+   padding: 0px 0px 30px 0px;
+   font-family: helvetica;
+}
+ 
+p {
+	margin: 0px;
+	padding: 24px 24px 0px 24px; 
+	text-align: justify;
+}
+
+p.subheading {
+	text-align: center;
+	font-weight: bold;
+}
+ 
+h1 {
+	background-color: #E6C7AE;
+	color: black;
+	text-align: center;
+	margin: 0px;
+	padding: 10px 10px;
+}
+
+h4 {
+	padding: 5px 10px;
+	margin: 30px 10px 0px 10px;	
+	background-color: #E6C7AE;
+	-webkit-border-radius: 4px;
+}
+
+h3 { 
+	padding: 10px 10px;
+	background-color: #E6C7AE;
+	margin: 30px 0px 5px 0px;	
+}
+
+a.button {
+  display: block;
+  overflow: hidden;
+}
+
+.portrait {
+   width: 320px;
+}

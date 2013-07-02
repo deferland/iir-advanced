@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<obj type="configuration">
+<item id="1"
+      site_name="SkyBlueCanvas"
+      contact_name="Your Name"
+      contact_title="Your Title"
+      contact_address="Your Address"
+      contact_city="Your City"
+      contact_state="Your State"
+      contact_zip="Your Postal Code"
+      contact_email="you@yourdomain.com"
+      contact_phone="123-555-1234"
+      contact_fax=""
+      contact_address_2=""
+      site_slogan="Type. Click. Publish. [tm]"
+      site_url="http://localhost/skyblue_v1.1b/branches/1.1-release/"
+      site_editor="wymeditor"
+      use_cache="0">
+</item>
+
+	</obj>
+</root>

@@ -1,0 +1,58 @@
+
+body, div, html {
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+
+html {
+  font-family: helvetica;
+}
+
+p {
+  color: black;
+  margin: 5px 0px 5px 0px;
+  padding: 0px;
+  text-align: justify;
+}
+
+#artist {
+   text-align: center;
+}
+
+#artist img {
+  width: 160px;
+  margin: 5px auto;
+  border: solid black 2px;
+  -webkit-box-shadow:10px 10px 5px #888;
+}
+
+h2 {
+	font-size: large;	
+}
+
+#logo {
+  text-align: center;
+}
+
+.landscape {
+  width: 480px;
+}
+
+.portrait {
+  width: 320px;
+}
+
+#about p {
+  font-size: small;
+  padding: 15px;
+}
+
+#header {
+  margin: 0px;
+}
+
+#footer {
+  margin: -1px 0px 0px 0px;
+}
+

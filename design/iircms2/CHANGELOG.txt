@@ -1,0 +1,140 @@
+-------------------------------------
+Version 1.1 Changes - July 29, 2008
+-------------------------------------
+
+Added a new version of the FormBuilder Manager (thanks to Todd Crowe) 
+that uses an improved form/field hierarchy.
+
+Added a new version of the manager.class.php super class 
+to support the new FormBuilder.
+
+Fixed a WYMeditor bug related to the root path of WYMeditor. 
+The bug prevented SkyBlueCanvas from running properly in a 
+sub-directory of the web root.
+
+Fixed a bug in the PHP file that builds the Internal Pages selector 
+for the Link button overlay in WYMeditor. The script now properly 
+uses SEF or non-SEF URLs depending on whether or not the .htaccess 
+file is present.
+
+Added a new RSS Feed to the Main Dashboard showing the latest 
+SkyBlueCanvas News and Blog Entries.
+
+Updated the Page Manager to add the Meta Description.
+
+Updated the SkinBuilder to support the Meta Description object on pages.
+
+
+-------------------------------------
+Version 1.1 Changes - Aug 03, 2008
+-------------------------------------
+
+Added The ability to publish/unpublish ads, gadgets and plugins
+
+Added The ability to publish/unpublish pages from the List View
+
+Added The ability to add collections to a page and page-region from 
+within the Page Manager (huge improvement)
+
+Added The ability to re-order items in the List View of several 
+Managers (Thanks, Todd)
+
+Added New Task icons* in the List View
+
+Added More flexible Banner Ad naming (zones are automagically 
+generated based on the ad file name)
+
+Added Several WYMeditor bug fixes
+
+Added New Resources panel on the Main Dashboard
+
+Added Meta Description now in the Page Manager
+
+Added Tabbed form on the Page Manager (we need to test this on all browsers)
+
+Added 2 new templates from StyleShout.com (TechJunkie and VectorLover)
+
+Added page-specific JavaScript files to your skins. For instance, if you 
+have a layout skin named skin.alternate.html, you can add a JavaScript 
+file that only loads on this page by creating a file named 
+skin.alternate.js in /skyblue_root/data/skins/your_skin/js/.
+
+Improvements to the plugin code for class-based plugins. The code previously 
+would create a new instance of the class for each invocation of the plugin 
+within a page.  We changed the code to keep track of the plugin classes on a 
+page and only instantiates them once. This saves overhead and allows the 
+constructor to be used to initialize (or load from files/DB) data that is 
+used in subsequent invocations. This may break existing class based plugins 
+but this memory-management was a necessary change.
+
+New Banner Ads Manager so you can place banner ads through the Admin Console. 
+Previously banner ads were required to be added via FTP only.
+
+Added 3 new classes to the OOP hierarchy: SkyBlueObject, Observer and SkyBlueError
+
+Implemented the Observer Pattern to support custom event registering and firing
+
+Moved BBCode, TidyImageTags, Preloader and NoEmpytAttrs to external plugins
+
+Deleted a lot of deprecated and un-used code from the Core class (removed about 1,000 lines of code)
+
+Moved the page skeleton to ui/front/ directory
+
+Deleted the rsrc directory and all references to it
+
+Deleted the docstruct class
+
+Deleted legacy libraries in /skyblue_root/libs/
+
+Fixed a bug in the Sitemapper class where the sitemap was being saved to the 
+wrong location (now saved in site root)
+
+-------------------------------------
+Version 1.1 Changes - Aug 06, 2008
+-------------------------------------
+
+Implemented WYMeditor v0.5
+
+-------------------------------------
+Version 1.1 Changes - Sept, 2008
+-------------------------------------
+
+Implemented page fragments to allow devs to have complete control over the 
+output of managers.
+
+-------------------------------------
+Version 1.1 Changes - Oct 10, 2008
+-------------------------------------
+
+Added support for TinyMCE and FCKEditor
+
+-------------------------------------
+Version 1.1 Changes - Oct 16, 2008
+-------------------------------------
+
+Added a Router class and modified the htaccess rewrite rules to support 
+better SEF URLS (thanks to metsieder from the users' forum for the code and idea).
+
+-------------------------------------
+Version 1.1 Changes - Oct 16, 2008
+-------------------------------------
+
+Added support for page caching
+
+-------------------------------------
+Version 1.1 Changes - Oct 17, 2008
+-------------------------------------
+
+Added a Filter class to move Core's GetVar feature to a separate object
+
+Added a FileSystem class to move all file system interactions to a separate object
+
+Cleaned up some of the Core code to use the methods of the new classes
+
+-------------------------------------
+Version 1.1 Changes - Oct 17, 2008
+-------------------------------------
+
+Added logic to the Core class to prevent duplicate page names. Pages can be 
+created and saved with duplicate names but the duplicates cannot be published.
+

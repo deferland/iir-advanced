@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>clef</key>
+	<string>BC</string>
+	<key>abbreviation</key>
+	<string>tTrom</string>
+	<key>maxNote</key>
+	<integer>63</integer>
+	<key>adZone</key>
+	<string>zone:6</string>
+	<key>minNote</key>
+	<integer>9</integer>
+	<key>noteNames</key>
+	<array>
+		<string>E♭ 1</string>
+		<string>E 1</string>
+		<string>F 1</string>
+		<string>F# 1</string>
+		<string>G♭ 1</string>
+		<string>G 1</string>
+		<string>G# 1</string>
+		<string>A♭ 1</string>
+		<string>A 1</string>
+		<string>A# 1</string>
+		<string>B♭ 1</string>
+		<string>B 1</string>
+		<string>C 2</string>
+		<string>C# 2</string>
+		<string>D♭ 2</string>
+		<string>D 2</string>
+		<string>D# 2</string>
+		<string>E♭ 2</string>
+		<string>E 2</string>
+		<string>F 2</string>
+		<string>F# 2</string>
+		<string>G♭ 2</string>
+		<string>G 2</string>
+		<string>G# 2</string>
+		<string>A♭ 2</string>
+		<string>A 2</string>
+		<string>A# 2</string>
+		<string>B♭ 2</string>
+		<string>B 2</string>
+		<string>C 3</string>
+		<string>C# 3</string>
+		<string>D♭ 3</string>
+		<string>D 3</string>
+		<string>D# 3</string>
+		<string>E♭ 3</string>
+		<string>E 3</string>
+		<string>F 3</string>
+		<string>F# 3</string>
+		<string>G♭ 3</string>
+		<string>G 3</string>
+		<string>G# 3</string>
+		<string>A♭ 3</string>
+		<string>A 3</string>
+		<string>A# 3</string>
+		<string>B♭ 3</string>
+		<string>B 3</string>
+		<string>C 4</string>
+		<string>C# 4</string>
+		<string>D♭ 4</string>
+		<string>D 4</string>
+		<string>D# 4</string>
+		<string>E♭ 4</string>
+		<string>E 4</string>
+		<string>F 4</string>
+		<string>F# 4</string>
+		<string>G♭ 4</string>
+		<string>G 4</string>
+		<string>G# 4</string>
+		<string>A♭ 4</string>
+		<string>A 4</string>
+		<string>A# 4</string>
+		<string>B♭ 4</string>
+		<string>B 4</string>
+		<string>C 5</string>
+	</array>
+	<key>trillLabels</key>
+	<array>
+		<dict>
+			<key>noteLabel</key>
+			<string>B 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT87</string>
+			<key>trillLabel</key>
+			<string>B6 - C7</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B♭ 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT86</string>
+			<key>trillLabel</key>
+			<string>A#6 - C7</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A# 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT85</string>
+			<key>trillLabel</key>
+			<string>A#6 - B6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT84</string>
+			<key>trillLabel</key>
+			<string>A6 - B6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT83</string>
+			<key>trillLabel</key>
+			<string>A6 - B♭6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G# 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT82</string>
+			<key>trillLabel</key>
+			<string>G#6 - A#6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G# 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT81</string>
+			<key>trillLabel</key>
+			<string>G#6 - A6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT80</string>
+			<key>trillLabel</key>
+			<string>G6 - A6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT79</string>
+			<key>trillLabel</key>
+			<string>G6 - A♭6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F# 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT78</string>
+			<key>trillLabel</key>
+			<string>F#6 - G#6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F# 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT77</string>
+			<key>trillLabel</key>
+			<string>F#6 - G6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT76</string>
+			<key>trillLabel</key>
+			<string>F6 - G6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT75</string>
+			<key>trillLabel</key>
+			<string>F6 - G♭6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT74</string>
+			<key>trillLabel</key>
+			<string>E6 - F#6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT73</string>
+			<key>trillLabel</key>
+			<string>E6 - F6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E♭ 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT72</string>
+			<key>trillLabel</key>
+			<string>E♭6 - F6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D# 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT71</string>
+			<key>trillLabel</key>
+			<string>D#6 - E6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT70</string>
+			<key>trillLabel</key>
+			<string>D6 - E6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT69</string>
+			<key>trillLabel</key>
+			<string>D6 - E♭6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C# 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT68</string>
+			<key>trillLabel</key>
+			<string>C#6 - D#6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C# 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT67</string>
+			<key>trillLabel</key>
+			<string>C#6 - D6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT66</string>
+			<key>trillLabel</key>
+			<string>C6 - D6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C 6</string>
+			<key>noteTrillImage</key>
+			<string>TrT65</string>
+			<key>trillLabel</key>
+			<string>C6 - D♭6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT64</string>
+			<key>trillLabel</key>
+			<string>B5 - C#6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT63</string>
+			<key>trillLabel</key>
+			<string>B5 - C6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B♭ 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT62</string>
+			<key>trillLabel</key>
+			<string>B♭5 - C6</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A# 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT61</string>
+			<key>trillLabel</key>
+			<string>A#5 - B5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT60</string>
+			<key>trillLabel</key>
+			<string>A5 - B5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT59</string>
+			<key>trillLabel</key>
+			<string>A5 - B♭5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G# 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT58</string>
+			<key>trillLabel</key>
+			<string>G#5 - A#5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G# 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT57</string>
+			<key>trillLabel</key>
+			<string>G#5 - A5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT56</string>
+			<key>trillLabel</key>
+			<string>G5 - A5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT55</string>
+			<key>trillLabel</key>
+			<string>G5 - A♭5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F# 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT54</string>
+			<key>trillLabel</key>
+			<string>F#5 - G#5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F# 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT53</string>
+			<key>trillLabel</key>
+			<string>F#5 - G5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT52</string>
+			<key>trillLabel</key>
+			<string>F5 - G5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT51</string>
+			<key>trillLabel</key>
+			<string>F5 - G♭5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT50</string>
+			<key>trillLabel</key>
+			<string>E5 - F#5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT49</string>
+			<key>trillLabel</key>
+			<string>E5 - F5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E♭ 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT48</string>
+			<key>trillLabel</key>
+			<string>E♭5 - F5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D# 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT47</string>
+			<key>trillLabel</key>
+			<string>D#5 - E5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT46</string>
+			<key>trillLabel</key>
+			<string>D5 - E5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT45</string>
+			<key>trillLabel</key>
+			<string>D5 - E♭5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C# 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT44</string>
+			<key>trillLabel</key>
+			<string>C#5 - D#5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C# 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT43</string>
+			<key>trillLabel</key>
+			<string>C#5 - D5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT42</string>
+			<key>trillLabel</key>
+			<string>C5 - D5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C 5</string>
+			<key>noteTrillImage</key>
+			<string>TrT41</string>
+			<key>trillLabel</key>
+			<string>C5 - D♭5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT40</string>
+			<key>trillLabel</key>
+			<string>B4 - C#5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT39</string>
+			<key>trillLabel</key>
+			<string>B4 - C5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B♭ 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT38</string>
+			<key>trillLabel</key>
+			<string>B♭4 - C5</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A# 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT37</string>
+			<key>trillLabel</key>
+			<string>A#4 - B4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT36</string>
+			<key>trillLabel</key>
+			<string>A4 - B4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT35</string>
+			<key>trillLabel</key>
+			<string>A4 - B♭4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G# 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT34</string>
+			<key>trillLabel</key>
+			<string>G#4 - A#4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G# 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT33</string>
+			<key>trillLabel</key>
+			<string>G#4 - A4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT32</string>
+			<key>trillLabel</key>
+			<string>G4 - A4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT31</string>
+			<key>trillLabel</key>
+			<string>G4 - A♭4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F# 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT30</string>
+			<key>trillLabel</key>
+			<string>F#4 - G#4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F# 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT29</string>
+			<key>trillLabel</key>
+			<string>F#4 - G4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT28</string>
+			<key>trillLabel</key>
+			<string>F4 - G4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT27</string>
+			<key>trillLabel</key>
+			<string>F4 - G♭4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT26</string>
+			<key>trillLabel</key>
+			<string>E4 - F#4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT25</string>
+			<key>trillLabel</key>
+			<string>E4 - F4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E♭ 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT24</string>
+			<key>trillLabel</key>
+			<string>E♭4 - F4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D# 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT23</string>
+			<key>trillLabel</key>
+			<string>D#4 - E4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT22</string>
+			<key>trillLabel</key>
+			<string>D4 - E4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>D 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT21</string>
+			<key>trillLabel</key>
+			<string>D4 - E♭4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C# 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT20</string>
+			<key>trillLabel</key>
+			<string>C#4 - D#4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C# 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT19</string>
+			<key>trillLabel</key>
+			<string>C#4 - D4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT18</string>
+			<key>trillLabel</key>
+			<string>C4 - D4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>C 4</string>
+			<key>noteTrillImage</key>
+			<string>TrT17</string>
+			<key>trillLabel</key>
+			<string>C4 - D♭4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT16</string>
+			<key>trillLabel</key>
+			<string>B3 - C#4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT15</string>
+			<key>trillLabel</key>
+			<string>B3 - C4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>B♭3</string>
+			<key>noteTrillImage</key>
+			<string>TrT14</string>
+			<key>trillLabel</key>
+			<string>B♭3 - C4</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A# 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT13</string>
+			<key>trillLabel</key>
+			<string>A#3 - B3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT12</string>
+			<key>trillLabel</key>
+			<string>A3 - B3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>A 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT11</string>
+			<key>trillLabel</key>
+			<string>A3 - B♭3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G# 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT10</string>
+			<key>trillLabel</key>
+			<string>G#3 - A#3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G# 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT09</string>
+			<key>trillLabel</key>
+			<string>G#3 - A3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT08</string>
+			<key>trillLabel</key>
+			<string>G3 - A3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>G 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT07</string>
+			<key>trillLabel</key>
+			<string>G3 - A♭3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F#3</string>
+			<key>noteTrillImage</key>
+			<string>TrT06</string>
+			<key>trillLabel</key>
+			<string>F#3 - G#3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F#3</string>
+			<key>noteTrillImage</key>
+			<string>TrT05</string>
+			<key>trillLabel</key>
+			<string>F#3 - G3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT04</string>
+			<key>trillLabel</key>
+			<string>F3 - G3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>F 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT03</string>
+			<key>trillLabel</key>
+			<string>F3 - G♭3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT02</string>
+			<key>trillLabel</key>
+			<string>E3 - F#3</string>
+		</dict>
+		<dict>
+			<key>noteLabel</key>
+			<string>E 3</string>
+			<key>noteTrillImage</key>
+			<string>TrT01</string>
+			<key>trillLabel</key>
+			<string>E3 - F3</string>
+		</dict>
+	</array>
+</dict>
+</plist>

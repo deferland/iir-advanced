@@ -1,0 +1,750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<link rel="stylesheet" href="IiR.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<title>Instruments In Reach</title>	
+</head>
+<body onload="">
+	<center>
+
+<script>
+function gup( name )
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+var instrument = 'Flute';
+var t1 = gup('instrument');
+if (t1 != "") { instrument = t1; }
+
+var t2 = gup('s');
+if (t2 != "") { s = parseInt(t2); }
+
+// set the clef to Base Clef for appropriate instruments and Treble Clef for all others
+var clef = 'TC';
+if (instrument == 'Bassoon') clef = 'BC';
+if (instrument == 'Trombone') clef = 'BC';
+if (instrument == 'Baritone') clef = 'BC';
+if (instrument == 'Tuba') clef = 'BC';
+
+var instrumentA = '';
+if (instrument == 'Baritone') instrumentA = 'Trumpet';
+if (instrument == 'Bassoon') instrumentA = 'Bassoon';
+if (instrument == 'Clarinet') instrumentA = 'Clarinet';
+if (instrument == 'Flute') instrumentA = 'Flute';
+if (instrument == 'Horn') instrumentA = 'Trumpet';
+if (instrument == 'Oboe') instrumentA = 'Oboe';
+if (instrument == 'Saxophone') instrumentA = 'Saxophone';
+if (instrument == 'Trombone') instrumentA = 'Trombone';
+if (instrument == 'Trumpet') instrumentA = 'Trumpet';
+if (instrument == 'Tuba') instrumentA = 'Trumpet';
+
+// setup images array
+images = new Array();
+names = new Array();
+alt = new Array();
+alt2 = new Array();
+
+if (clef == 'TC') {
+
+	// TC names
+	names[0] = 'E 3';
+	names[1] = 'F 3';
+	names[2] = 'F# / Gb 3';
+	names[3] = 'F# / Gb 3';
+	names[4] = 'G 3';
+	names[5] = 'G# / Ab 3';
+	names[6] = 'G# / Ab 3';
+	names[7] = 'A 3';
+	names[8] = 'A# / Bb 3';
+	names[9] = 'A# / Bb 3';
+	names[10] = 'B 3';
+	names[11] = 'C 4';
+	names[12] = 'C# / Db 4';
+	names[13] = 'C# / Db 4';
+	names[14] = 'D 4';
+	names[15] = 'D# / Eb 4';
+	names[16] = 'D# / Eb 4';
+	names[17] = 'E 4';
+	names[18] = 'F 4';
+	names[19] = 'F# / Gb 4';
+	names[20] = 'F# / Gb 4';
+	names[21] = 'G 4';
+	names[22] = 'G# / Ab 4';
+	names[23] = 'G# / Ab 4';
+	names[24] = 'A 4';
+	names[25] = 'A# / Bb 4';
+	names[26] = 'A# / Bb 4';
+	names[27] = 'B 4';
+	names[28] = 'C 5';
+	names[29] = 'C# / Db 5';
+	names[30] = 'C# / Db 5';
+	names[31] = 'D 5';
+	names[32] = 'D# / Eb 5';
+	names[33] = 'D# / Eb 5';
+	names[34] = 'E 5';
+	names[35] = 'F 5';
+	names[36] = 'F# / Gb 5';
+	names[37] = 'F# / Gb 35';
+	names[38] = 'G 5';
+	names[39] = 'G# / Ab 5';
+	names[40] = 'G# / Ab 5';
+	names[41] = 'A 5';
+	names[42] = 'A# / Bb 5';
+	names[43] = 'A# / Bb 5';
+	names[44] = 'B 5';
+	names[45] = 'C 6';
+	names[46] = 'C# / Db 6';
+	names[47] = 'C# / Db 6';
+	names[48] = 'D 6';
+	names[49] = 'D# / Eb 6';
+	names[50] = 'D# / Eb 6';
+	names[51] = 'E 6';
+	names[52] = 'F 6';
+	names[53] = 'F# / Gb 6';
+	names[54] = 'F# / Gb 6';
+	names[55] = 'G 6';
+	names[56] = 'G# / Ab 6';
+	names[57] = 'G# / Ab 6';
+	names[58] = 'A 6';
+	names[59] = 'A# / Bb 6';
+	names[60] = 'A# / Bb 6';
+
+}
+
+if (clef == 'BC') {
+
+	// BC names
+	names[1] = 'E 1';
+	names[2] = 'F 1';
+	names[3] = 'F# / Gb 1';
+	names[4] = 'F# / Gb 1';
+	names[5] = 'G 1';
+	names[6] = 'G# / Ab 1';
+	names[7] = 'G# / Ab 1';
+	names[8] = 'A 1';
+	names[9] = 'A# / Bb 1';
+	names[10] = 'A# / Bb 1';
+	names[11] = 'B 1';
+	names[12] = 'C 2';
+	names[13] = 'C# / Db 2';
+	names[14] = 'C# / Db 2';
+	names[15] = 'D 2';
+	names[16] = 'D# / Eb 2';
+	names[17] = 'D# / Eb 2';
+	names[18] = 'E 2';
+	names[19] = 'F 2';
+	names[20] = 'F# / Gb 2';
+	names[21] = 'F# / Gb 2';
+	names[22] = 'G 2';
+	names[23] = 'G# / Ab 2';
+	names[24] = 'G# / Ab 2';
+	names[25] = 'A 2';
+	names[26] = 'A# / Bb 2';
+	names[27] = 'A# / Bb 2';
+	names[28] = 'B 2';
+	names[29] = 'C 3';
+	names[30] = 'C# / Db 3';
+	names[31] = 'C# / Db 3';
+	names[32] = 'D 3';
+	names[33] = 'D# / Eb 3';
+	names[34] = 'D# / Eb 3';
+	names[35] = 'E 3';
+	names[36] = 'F 3';
+	names[37] = 'F# / Gb 3';
+	names[38] = 'F# / Gb 3';
+	names[39] = 'G 3';
+	names[40] = 'G# / Ab 3';
+	names[41] = 'G# / Ab 3';
+	names[42] = 'A 3';
+	names[43] = 'A# / Bb 3';
+	names[44] = 'A# / Bb 3';
+	names[45] = 'B 3';
+	names[46] = 'C 4';
+	names[47] = 'C# / Db 4';
+	names[48] = 'C# / Db 4';
+	names[49] = 'D 4';
+	names[50] = 'D# / Eb 4';
+	names[51] = 'D# / Eb 4';
+	names[52] = 'E 4';
+	names[53] = 'F 4';
+	names[54] = 'F# / Gb 4';
+	names[55] = 'F# / Gb 4';
+	names[56] = 'G 4';
+	names[57] = 'G# / Ab 4';
+	names[58] = 'G# / Ab 4';
+	names[59] = 'A 4';
+	names[60] = 'A# / Bb 4';
+	names[61] = 'A# / Bb 4';
+
+}
+
+if (instrument == 'Trombone') {
+	
+	images[18] = '7';
+	images[19] = '6';
+	images[20] = '5';
+	images[21] = '5';
+	images[22] = '4';
+	images[23] = '3';
+	images[24] = '3';
+	images[25] = '2';
+	images[26] = '1';
+	images[27] = '1';
+	images[28] = '7';
+	images[29] = '6';
+	images[30] = '5';
+	images[31] = '5';
+	images[32] = '4';
+	images[33] = '3';
+	images[34] = '3';
+	images[35] = '2';
+	images[36] = '1';
+	images[37] = '5';
+	images[38] = '5';
+	images[39] = '4';
+	images[40] = '3';
+	images[41] = '3';
+	images[42] = '2';
+	images[43] = '1';
+	images[44] = '1';
+	images[45] = '4';
+	images[46] = '3';
+	images[47] = '2';
+	images[48] = '2';
+	images[49] = '1';
+	images[50] = '3';
+	images[51] = '3';
+	images[52] = '2';
+	images[53] = '1';
+	images[54] = '5';
+	images[55] = '5';
+	images[56] = '4';
+	images[57] = '3';
+	images[58] = '3';
+	images[59] = '2';
+	images[60] = '1';
+	images[61] = '1';
+	
+}
+
+if (instrument == 'Bassoon') {
+
+	images[9] = 'bassoon1';
+	images[10] = 'bassoon1';
+	images[11] = 'bassoon2';
+	images[12] = 'bassoon3';
+	images[13] = 'bassoon4';
+	images[14] = 'bassoon4';
+	images[15] = 'bassoon5';
+	images[16] = 'bassoon6';
+	images[17] = 'bassoon6';
+	images[18] = 'bassoon7';
+	images[19] = 'bassoon8';
+	images[20] = 'bassoon9';
+	images[21] = 'bassoon9';
+	images[22] = 'bassoon10';
+	images[23] = 'bassoon11';
+	images[24] = 'bassoon11';
+	images[25] = 'bassoon12';
+	images[26] = 'bassoon13';
+	images[27] = 'bassoon13';
+	images[28] = 'bassoon14';
+	images[29] = 'bassoon15';
+	images[30] = 'bassoon16';
+	images[31] = 'bassoon16';
+	images[32] = 'bassoon17';
+	images[33] = 'bassoon18';
+	images[34] = 'bassoon18';
+	images[35] = 'bassoon19';
+	images[36] = 'bassoon20';
+	images[37] = 'bassoon21';
+	images[38] = 'bassoon21';
+	images[39] = 'bassoon22';
+	images[40] = 'bassoon23';
+	images[41] = 'bassoon23';
+	images[42] = 'bassoon24';
+	images[43] = 'bassoon25';
+	images[44] = 'bassoon25';
+	images[45] = 'bassoon26';
+	images[46] = 'bassoon27';
+	images[47] = 'bassoon28';
+	images[48] = 'bassoon28';
+	images[49] = 'bassoon29';
+	images[50] = 'bassoon30';
+	images[51] = 'bassoon30';
+	images[52] = 'bassoon31';
+	images[53] = 'bassoon32';
+	images[54] = 'bassoon33';
+	images[55] = 'bassoon33';
+	images[56] = 'bassoon34';
+
+}
+
+if (instrument == 'Oboe') {
+
+    alt[15] = 'oboe7';
+    alt[16] = 'oboe7';
+    alt[18] = 'oboe10';
+    alt[32] = 'oboe22';
+    alt[33] = 'oboe22';
+    alt[35] = 'oboe25';
+
+	images[8] = 'oboe1';
+	images[9] = 'oboe1';
+	images[10] = 'oboe2';
+	images[11] = 'oboe3';
+	images[12] = 'oboe4';
+	images[13] = 'oboe4';
+	images[14] = 'oboe5';
+	images[15] = 'oboe6';
+	images[16] = 'oboe6';
+	images[17] = 'oboe8';
+	images[18] = 'oboe9';
+	images[19] = 'oboe12';
+	images[20] = 'oboe12';
+	images[21] = 'oboe13';
+	images[22] = 'oboe14';
+	images[23] = 'oboe14';
+	images[24] = 'oboe15';
+	images[25] = 'oboe16';
+	images[26] = 'oboe16';
+	images[27] = 'oboe17';
+	images[28] = 'oboe18';
+	images[29] = 'oboe19';
+	images[30] = 'oboe19';
+	images[31] = 'oboe20';
+	images[32] = 'oboe21';
+	images[33] = 'oboe21';
+	images[34] = 'oboe23';
+	images[35] = 'oboe24';
+	images[36] = 'oboe27';
+	images[37] = 'oboe27';
+	images[38] = 'oboe28';
+	images[39] = 'oboe29';
+	images[40] = 'oboe29';
+	images[41] = 'oboe30';
+	images[42] = 'oboe31';
+	images[43] = 'oboe31';
+	images[44] = 'oboe32';
+	images[45] = 'oboe33';
+	images[46] = 'oboe34';
+	images[47] = 'oboe34';
+	images[48] = 'oboe35';
+	images[49] = 'oboe36';
+	images[50] = 'oboe36';
+
+}
+
+if (instrument == 'Trumpet') {
+
+	images[2] = 'trumpet7';
+	images[3] = 'trumpet7';
+	images[4] = 'trumpet5';
+	images[5] = 'trumpet6';
+	images[6] = 'trumpet6';
+	images[7] = 'trumpet4';
+	images[8] = 'trumpet1';
+	images[9] = 'trumpet1';
+	images[10] = 'trumpet2';
+	images[11] = 'trumpet';
+	images[12] = 'trumpet7';
+	images[13] = 'trumpet7';
+	images[14] = 'trumpet5';
+	images[15] = 'trumpet6';
+	images[16] = 'trumpet6';
+	images[17] = 'trumpet4';
+	images[18] = 'trumpet1';
+	images[19] = 'trumpet2';
+	images[20] = 'trumpet2';
+	images[21] = 'trumpet';
+	images[22] = 'trumpet6';
+	images[23] = 'trumpet6';
+	images[24] = 'trumpet4';
+	images[25] = 'trumpet1';
+	images[26] = 'trumpet1';
+	images[27] = 'trumpet2';
+	images[28] = 'trumpet';
+	images[29] = 'trumpet4';
+	images[30] = 'trumpet4';
+	images[31] = 'trumpet1';
+	images[32] = 'trumpet2';
+	images[33] = 'trumpet2';
+	images[34] = 'trumpet';
+	images[35] = 'trumpet1';
+	images[36] = 'trumpet2';
+	images[37] = 'trumpet2';
+	images[38] = 'trumpet';
+	images[39] = 'trumpet6';
+	images[40] = 'trumpet6';
+	images[41] = 'trumpet4';
+	images[42] = 'trumpet1';
+	images[43] = 'trumpet1';
+	images[44] = 'trumpet2';
+	images[45] = 'trumpet';
+
+}
+
+if (instrument == 'Saxophone') {
+
+	images[8] = 'sax31';
+	images[9] = 'sax31';
+	images[10] = 'sax2';
+	images[11] = 'sax1';
+	images[12] = 'sax4';
+	images[13] = 'sax4';
+	images[14] = 'sax5';
+	images[15] = 'sax6';
+	images[16] = 'sax6';
+	images[17] = 'sax7';
+	images[18] = 'sax8';
+	images[19] = 'sax9';
+	images[20] = 'sax9';
+	images[21] = 'sax10';
+	images[22] = 'sax11';
+	images[23] = 'sax11';
+	images[24] = 'sax12';
+	images[25] = 'sax13';
+	images[26] = 'sax13';
+	images[27] = 'sax14';
+	images[28] = 'sax15';
+	images[29] = 'sax16';
+	images[30] = 'sax16';
+	images[31] = 'sax17';
+	images[32] = 'sax18';
+	images[33] = 'sax18';
+	images[34] = 'sax19';
+	images[35] = 'sax32';
+	images[36] = 'sax33';
+	images[37] = 'sax33';
+	images[38] = 'sax34';
+	images[39] = 'sax20';
+	images[40] = 'sax20';
+	images[41] = 'sax21';
+	images[42] = 'sax22';
+	images[43] = 'sax22';
+	images[44] = 'sax23';
+	images[45] = 'sax24';
+	images[46] = 'sax26';
+	images[47] = 'sax26';
+	images[48] = 'sax27';
+	images[49] = 'sax28';
+	images[50] = 'sax28';
+	images[51] = 'sax29';
+	images[52] = 'sax30';
+
+}
+
+if (instrument == 'Baritone') {
+
+	images[18] = 'trumpet7';
+	images[19] = 'trumpet5';
+	images[20] = 'trumpet6';
+	images[21] = 'trumpet6';
+	images[22] = 'trumpet4';
+	images[23] = 'trumpet1';
+	images[24] = 'trumpet1';
+	images[25] = 'trumpet2';
+	images[26] = 'trumpet';
+	images[27] = 'trumpet';
+	images[28] = 'trumpet7';
+	images[29] = 'trumpet5';
+	images[30] = 'trumpet6';
+	images[31] = 'trumpet6';
+	images[32] = 'trumpet4';
+	images[33] = 'trumpet1';
+	images[34] = 'trumpet1';
+	images[35] = 'trumpet2';
+	images[36] = 'trumpet';
+	images[37] = 'trumpet6';
+	images[38] = 'trumpet6';
+	images[39] = 'trumpet4';
+	images[40] = 'trumpet1';
+	images[41] = 'trumpet1';
+	images[42] = 'trumpet2';
+	images[43] = 'trumpet';
+	images[44] = 'trumpet';
+	images[45] = 'trumpet4';
+	images[46] = 'trumpet1';
+	images[47] = 'trumpet2';
+	images[48] = 'trumpet2';
+	images[49] = 'trumpet';
+	images[50] = 'trumpet1';
+	images[51] = 'trumpet1';
+	images[52] = 'trumpet2';
+	images[53] = 'trumpet';
+	images[54] = 'trumpet6';
+	images[55] = 'trumpet6';
+	images[56] = 'trumpet4';
+	images[57] = 'trumpet1';
+	images[58] = 'trumpet1';
+	images[59] = 'trumpet2';
+	images[60] = 'trumpet';
+	images[61] = 'trumpet';
+
+}
+
+if (instrument == 'Tuba') {
+
+	images[1] = 'trumpet7';
+	images[2] = 'trumpe5';
+	images[3] = 'trumpet6';
+	images[4] = 'trumpet6';
+	images[5] = 'trumpet4';
+	images[6] = 'trumpet1';
+	images[7] = 'trumpet1';
+	images[8] = 'trumpet2';
+	images[9] = 'trumpet';
+	images[10] = 'trumpet';
+	images[11] = 'trumpet7';
+	images[12] = 'trumpet5';
+	images[13] = 'trumpet6';
+	images[14] = 'trumpet6';
+	images[15] = 'trumpet4';
+	images[16] = 'trumpet1';
+	images[17] = 'trumpet1';
+	images[18] = 'trumpet2';
+	images[19] = 'trumpet';
+	images[20] = 'trumpet6';
+	images[21] = 'trumpet6';
+	images[22] = 'trumpet4';
+	images[23] = 'trumpet1';
+	images[24] = 'trumpet1';
+	images[25] = 'trumpet2';
+	images[26] = 'trumpet';
+	images[27] = 'trumpet';
+	images[28] = 'trumpet4';
+	images[29] = 'trumpet1';
+	images[30] = 'trumpet2';
+	images[31] = 'trumpet2';
+	images[32] = 'trumpet';
+	images[33] = 'trumpet1';
+	images[34] = 'trumpet1';
+	images[35] = 'trumpet2';
+	images[36] = 'trumpet';
+	images[37] = 'trumpet6';
+	images[38] = 'trumpet6';
+	images[39] = 'trumpet4';
+	images[40] = 'trumpet1';
+	images[41] = 'trumpet1';
+	images[42] = 'trumpet2';
+	images[43] = 'trumpet';
+	images[44] = 'trumpet';
+
+}
+
+if (instrument == 'Flute') {
+
+	images[11] = 'flute1';
+	images[12] = 'flute2';
+	images[13] = 'flute2';
+	images[14] = 'flute3';
+	images[15] = 'flute4';
+	images[16] = 'flute4';
+	images[17] = 'flute5';
+	images[18] = 'flute6';
+	images[19] = 'flute7';
+	images[20] = 'flute7';
+	images[21] = 'flute8';
+	images[22] = 'flute9';
+	images[23] = 'flute9';
+	images[24] = 'flute10';
+	images[25] = 'flute11';
+	images[26] = 'flute11';
+	images[27] = 'flute12';
+	images[28] = 'flute13';
+	images[29] = 'flute14';
+	images[30] = 'flute14';
+	images[31] = 'flute32';
+	images[32] = 'flute33';
+	images[33] = 'flute33';
+	images[34] = 'flute34';
+	images[35] = 'flute35';
+	images[36] = 'flute30';
+	images[37] = 'flute30';
+	images[38] = 'flute36';
+	images[39] = 'flute37';
+	images[40] = 'flute37';
+	images[41] = 'flute38';
+	images[42] = 'flute39';
+	images[43] = 'flute39';
+	images[44] = 'flute40';
+	images[45] = 'flute31';
+	images[46] = 'flute41';
+	images[47] = 'flute41';
+	images[48] = 'flute15';
+	images[49] = 'flute16';
+	images[50] = 'flute16';
+	images[51] = 'flute17';
+	images[52] = 'flute28';
+	images[53] = 'flute19';
+	images[54] = 'flute19';
+	images[55] = 'flute20';
+	images[56] = 'flute21';
+	images[57] = 'flute21';
+	images[58] = 'flute22';
+	images[59] = 'flute29';
+	images[60] = 'flute29';
+
+}
+
+if (instrument == 'Clarinet') {
+
+    alt[0] = 'clar2';
+    alt[1] = 'clar5';
+    alt[2] = 'clar7';
+    alt[3] = 'clar7';
+    alt[10] = 'clar14';
+    alt[15] = 'clar19';
+    alt[16] = 'clar19';
+    alt[27] = 'clar31';
+    alt[28] = 'clar35';
+    alt[29] = 'clar37';
+    alt[30] = 'clar37';
+    alt[36] = 'clar44';
+    alt[37] = 'clar44';
+    alt[42] = 'clar49';
+    alt[43] = 'clar49';
+    alt[49] = 'clar56';
+    alt[50] = 'clar56';
+
+    alt2[0] = 'clar3';
+    alt2[2] = 'clar8';
+    alt2[3] = 'clar8';
+    alt2[15] = 'clar20';
+    alt2[16] = 'clar20';
+    alt2[27] = 'clar33';
+    alt2[29] = 'clar38';
+    alt2[30] = 'clar38';
+    alt2[42] = 'clar50';
+    alt2[43] = 'clar50';
+
+	images[0] = 'clar1';
+	images[1] = 'clar4';
+	images[2] = 'clar6';
+	images[3] = 'clar6';
+	images[4] = 'clar9';
+	images[5] = 'clar10';
+	images[6] = 'clar10';
+	images[7] = 'clar11';
+	images[8] = 'clar12';
+	images[9] = 'clar12';
+	images[10] = 'clar13';
+	images[11] = 'clar15';
+	images[12] = 'clar16';
+	images[13] = 'clar16';
+	images[14] = 'clar17';
+	images[15] = 'clar18';
+	images[16] = 'clar18';
+	images[17] = 'clar21';
+	images[18] = 'clar22';
+	images[19] = 'clar23';
+	images[20] = 'clar23';
+	images[21] = 'clar25';
+	images[22] = 'clar26';
+	images[23] = 'clar26';
+	images[24] = 'clar27';
+	images[25] = 'clar28';
+	images[26] = 'clar28';
+	images[27] = 'clar30';
+	images[28] = 'clar34';
+	images[29] = 'clar36';
+	images[30] = 'clar36';
+	images[31] = 'clar39';
+	images[32] = 'clar40';
+	images[33] = 'clar40';
+	images[34] = 'clar41';
+	images[35] = 'clar42';
+	images[36] = 'clar43';
+	images[37] = 'clar43';
+	images[38] = 'clar45';
+	images[39] = 'clar46';
+	images[40] = 'clar46';
+	images[41] = 'clar47';
+	images[42] = 'clar48';
+	images[43] = 'clar48';
+	images[44] = 'clar51';
+	images[45] = 'clar52';
+	images[46] = 'clar53';
+	images[47] = 'clar53';
+	images[48] = 'clar54';
+	images[49] = 'clar55';
+	images[50] = 'clar55';
+	images[51] = 'clar57';
+	images[52] = 'clar58';
+	images[53] = 'clar60';
+	images[54] = 'clar60';
+	images[55] = 'clar62';
+
+}
+
+if (instrument == 'Horn') {
+
+	images[1] = 'trumpet1';
+	images[2] = 'trumpet2';
+	images[3] = 'trumpet2';
+	images[4] = 'trumpet';
+	images[5] = 'trumpet6';
+	images[6] = 'trumpet6';
+	images[7] = 'trumpet4';
+	images[8] = 'trumpet1';
+	images[9] = 'trumpet1';
+	images[10] = 'trumpet2';
+	images[11] = 'trumpet';
+	images[12] = 'trumpet4';
+	images[13] = 'trumpet4';
+	images[14] = 'trumpet1';
+	images[15] = 'trumpet2';
+	images[16] = 'trumpet2';
+	images[17] = 'trumpet';
+	images[18] = 'trumpet1';
+	images[19] = 'trumpet2';
+	images[20] = 'trumpet2';
+	images[21] = 'trumpet';
+	images[22] = 'trumpet6';
+	images[23] = 'trumpet6';
+	images[24] = 'trumpet4';
+	images[25] = 'trumpet1';
+	images[26] = 'trumpet1';
+	images[27] = 'trumpet2';
+	images[28] = 'trumpet';
+	images[29] = 'trumpet3';
+	images[30] = 'trumpet2';
+	images[31] = 'trumpet';
+	images[32] = 'trumpet2';
+	images[33] = 'trumpet2';
+	images[34] = 'trumpet';
+	images[35] = 'trumpet1';
+	images[36] = 'trumpet2';
+	images[37] = 'trumpet2';
+	images[38] = 'trumpet';
+	images[39] = 'trumpet6';
+	images[40] = 'trumpet6';
+	images[41] = 'trumpet4';
+
+}
+
+document.write('<table cellspacing=0 cellpadding=0 border=0><tr>');
+
+document.write('<td width=40 align=middle><img src="'+instrumentA+'/'+images[s]+'.png" border=0"></td>');
+
+if (alt[s]) {
+	document.write('<td width=40 align=middle><a href="screen4.html?instrument='+instrument+'&s='+s+'"><img src="right.png" border=0"></a></td>');
+}
+
+document.write('</tr></table>');
+
+</script>
+
+</center>
+
+</body>
+</html>

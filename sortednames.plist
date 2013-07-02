@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>accelerando</string>
+			<key>description</key>
+			<string>gradually increase the tempo</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>adagio</string>
+			<key>description</key>
+			<string>slowly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>agile</string>
+			<key>description</key>
+			<string>swiftly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>agitato</string>
+			<key>description</key>
+			<string>agitated</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>al, alla</string>
+			<key>description</key>
+			<string>in the manner of</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>allegretto</string>
+			<key>description</key>
+			<string>moderatley fast</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>allegro</string>
+			<key>description</key>
+			<string>lively</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>altissimo</string>
+			<key>description</key>
+			<string>the uppermost register, above the traditional range of the instrument. On saxophone, this is generally above F or F#, depending on the instrument’s keywork</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>alto</string>
+			<key>description</key>
+			<string>refers to a particular range of the voice which is the second highest of the standard four voice range, and is between soprano and tenor</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>amoroso</string>
+			<key>description</key>
+			<string>loving</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>andante</string>
+			<key>description</key>
+			<string>moderately slow but moving, walking tempo</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>andantino</string>
+			<key>description</key>
+			<string>slightly fast than andante</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>animato</string>
+			<key>description</key>
+			<string>animated, lively</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>arioso</string>
+			<key>description</key>
+			<string>airy, lyrical</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>assai</string>
+			<key>description</key>
+			<string>very</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>a tempo</string>
+			<key>description</key>
+			<string>in time</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>B</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>barbaro</string>
+			<key>description</key>
+			<string>Barbarically or Heavy handed</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>bass</string>
+			<key>description</key>
+			<string>refers to a particular range of voice, the lowest of all the standard four voice ranges</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>beat</string>
+			<key>description</key>
+			<string>the pronounced rhythm of music;  one single stroke of a rhythmic accent</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>ben or bene</string>
+			<key>description</key>
+			<string>well</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>brillante</string>
+			<key>description</key>
+			<string>brillantly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>brio</string>
+			<key>description</key>
+			<string>vigour</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>C</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>common time</string>
+			<key>description</key>
+			<string>the time signature 4/4, four beats per measure</string>
+			<key>image</key>
+			<string>common_time.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>con</string>
+			<key>description</key>
+			<string>with; used in very many musical directions, for example con allegrezza (with liveliness), con amore (with tenderness)</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>con amore, con amor</string>
+			<key>description</key>
+			<string>with love, tenderly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>con brio</string>
+			<key>description</key>
+			<string>with spirirt, with vigour</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>con forza</string>
+			<key>description</key>
+			<string>with force</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>con fuoco</string>
+			<key>description</key>
+			<string>with fire, in a fiery manner</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>con moto</string>
+			<key>description</key>
+			<string>with motion</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>crescendo</string>
+			<key>description</key>
+			<string>gradually increase volume</string>
+			<key>image</key>
+			<string>crescendo.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>cut time</string>
+			<key>description</key>
+			<string>Same as the meter 2/2: two half-note (minim) beats per measure</string>
+			<key>image</key>
+			<string>cut_time.png</string>
+		</dict>
+	</array>
+	<key>D</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Da Capo</string>
+			<key>description</key>
+			<string>from beginning</string>
+			<key>image</key>
+			<string>dc.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Dal Segno</string>
+			<key>description</key>
+			<string>from sign</string>
+			<key>image</key>
+			<string>ds.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>decrescendo</string>
+			<key>description</key>
+			<string>gradually reduce volume</string>
+			<key>image</key>
+			<string>decrescendo.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>dolce</string>
+			<key>description</key>
+			<string>sweetly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>E</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>energico</string>
+			<key>description</key>
+			<string>energetic, strong</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>espirando</string>
+			<key>description</key>
+			<string>expiring, dying away</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>espressivo</string>
+			<key>description</key>
+			<string>expressively</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>F</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>fermata</string>
+			<key>description</key>
+			<string>finished, closed; i.e., a rest or note is to be held for a duration that is at the discretion of the performer or conductor</string>
+			<key>image</key>
+			<string>fermata.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>fine</string>
+			<key>description</key>
+			<string>end</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>flat</string>
+			<key>description</key>
+			<string>a symbol (♭) that lowers the pitch of a note by a semitone</string>
+			<key>image</key>
+			<string>flat.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>forte or f</string>
+			<key>description</key>
+			<string>strong, loud</string>
+			<key>image</key>
+			<string>f.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>fortepiano or fp</string>
+			<key>description</key>
+			<string>strong-gentle, loud then immediately soft</string>
+			<key>image</key>
+			<string>fp.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>fortissimo or ff</string>
+			<key>description</key>
+			<string>very loud</string>
+			<key>image</key>
+			<string>ff.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>fortississimo or fff</string>
+			<key>description</key>
+			<string>as loud as possible</string>
+			<key>image</key>
+			<string>fff.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>forzando or fz</string>
+			<key>description</key>
+			<string>instruction to play a note with strong, sudden emphasis</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>G</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>gentile</string>
+			<key>description</key>
+			<string>gently</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>giocoso</string>
+			<key>description</key>
+			<string>cheerfully, playfully</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>grandioso</string>
+			<key>description</key>
+			<string>grandly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>grave</string>
+			<key>description</key>
+			<string>slowly and seriously</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>I</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>intro</string>
+			<key>description</key>
+			<string>opening selection</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>L</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>larghetto</string>
+			<key>description</key>
+			<string>somewhat slowly; not as slow as largo</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>larghissimo</string>
+			<key>description</key>
+			<string>very slowly; slower than largo</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>largo</string>
+			<key>description</key>
+			<string>broadly, slowly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>legato</string>
+			<key>description</key>
+			<string>in a smooth and connected manner</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>lento </string>
+			<key>description</key>
+			<string>slow</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>M</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>ma non troppo</string>
+			<key>description</key>
+			<string>but not too much</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>maestoso</string>
+			<key>description</key>
+			<string>in a majestic and stately manner</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>marcato</string>
+			<key>description</key>
+			<string>marked; i.e., with accentuation, execute every note as if it were to be accented</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>marcia</string>
+			<key>description</key>
+			<string>a march</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>measure</string>
+			<key>description</key>
+			<string>the period of a musical piece that encompasses a complete cycle of the time signature</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>meno</string>
+			<key>description</key>
+			<string>less</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>mezzo</string>
+			<key>description</key>
+			<string>half, moderately loud</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>mezzo forte</string>
+			<key>description</key>
+			<string>moderately loud</string>
+			<key>image</key>
+			<string>mezzo_forte.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>mezzo piano</string>
+			<key>description</key>
+			<string>moderately soft</string>
+			<key>image</key>
+			<string>mezzo_piano.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>moderato</string>
+			<key>description</key>
+			<string>in a moderate tempo</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>molto</string>
+			<key>description</key>
+			<string>much</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>mosso</string>
+			<key>description</key>
+			<string>With motion or animation</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>N</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>natural</string>
+			<key>description</key>
+			<string>a symbol that cancels the effect of a sharp or a flat</string>
+			<key>image</key>
+			<string>nature.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>naturale or nat.</string>
+			<key>description</key>
+			<string>natural; i.e., discontinue a special effect</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>non</string>
+			<key>description</key>
+			<string>not</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>P</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>passionato</string>
+			<key>description</key>
+			<string>passionately</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>pesante</string>
+			<key>description</key>
+			<string>heavy and ponderous, burdened</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>pianissimo or pp</string>
+			<key>description</key>
+			<string>very soft</string>
+			<key>image</key>
+			<string>pp.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>piano or p</string>
+			<key>description</key>
+			<string>soft</string>
+			<key>image</key>
+			<string>p.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>più</string>
+			<key>description</key>
+			<string>more</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>poco a poco</string>
+			<key>description</key>
+			<string>little by little</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>prestissimo</string>
+			<key>description</key>
+			<string>extremely quickly, as fast as possible</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>presto</string>
+			<key>description</key>
+			<string>very quickly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>primo or prima</string>
+			<key>description</key>
+			<string>first</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>R</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>rallentando or rall.</string>
+			<key>description</key>
+			<string>gradually slower</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>rit.</string>
+			<key>description</key>
+			<string>an abbreviation for ritardando</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>ritardando, ritard., rit.</string>
+			<key>description</key>
+			<string>gradually slowing down, decelerating</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>rubato</string>
+			<key>description</key>
+			<string>slightly speeding up or slowing down the tempo of a piece at the discretion of the soloist or the conductor; to rob</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>S</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>sempre</string>
+			<key>description</key>
+			<string>always</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>sforzando or sfz</string>
+			<key>description</key>
+			<string>instruction to play a note with strong, sudden emphasis</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>sharp</string>
+			<key>description</key>
+			<string>a symbol (♯) that raises the pitch of the note by a semitone</string>
+			<key>image</key>
+			<string>sharp.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>segno</string>
+			<key>description</key>
+			<string>sign </string>
+			<key>image</key>
+			<string>segno.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>silenzio</string>
+			<key>description</key>
+			<string>silence; i.e., without reverberations</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>simile</string>
+			<key>description</key>
+			<string>similarly; i.e., continue applying the preceding directive</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>soli</string>
+			<key>description</key>
+			<string>executed by more than one player or voice</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>solo</string>
+			<key>description</key>
+			<string>alone; i.e., executed by a single instrument or voice</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>soprano</string>
+			<key>description</key>
+			<string>refers to a particular range of voice, the highest of the standard four voice ranges</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>staccato</string>
+			<key>description</key>
+			<string>making each note brief and detached, cut short and crisp</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>subito</string>
+			<key>description</key>
+			<string>suddenly</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>T</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>tacet</string>
+			<key>description</key>
+			<string>silent; do not play</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>tempo</string>
+			<key>description</key>
+			<string>time, the speed of a piece of music</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>tenuto</string>
+			<key>description</key>
+			<string>So as to be held for the full time value; sustained</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>tenor</string>
+			<key>description</key>
+			<string>refers to a particular range of voice, second lowest of the standard four voice range, and is between alto and bass</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>tranquillo</string>
+			<key>description</key>
+			<string>calmly, peacefully</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>tutti</string>
+			<key>description</key>
+			<string>all or together; everyone</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>U</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>un poco</string>
+			<key>description</key>
+			<string>a little</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>V</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>vibrato</string>
+			<key>description</key>
+			<string>vibrating, rapidly repeating slight alteration in the pitch of a note</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>vivace</string>
+			<key>description</key>
+			<string>lively, up-tempo</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>W</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>waltz</string>
+			<key>description</key>
+			<string>dance written in triple time, where the accent falls on the first beat of each measure</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,65 @@
+NOTE
+
+If you are upgrading from an earlier version of SkyBlueCanvas, please refer to the article on Upgrading SkyBlueCanvas.
+What You Will Need (System Requirements)
+
+   1. PHP v4-5.x running on Linux, Unix, FreeBSD, OpenBSD or MacOS X
+      
+      (Sorry, Windows servers are not supported at this time)
+   
+   2. A FTP Client 
+     
+     (Get FileZilla from Mozilla for free at http://filezilla-project.org/download.php)
+   
+   3. mod_rewrite enabled (optional but recommended)
+   
+   4. JavaScript enabled in your web browser
+      
+      (See http://www.umassd.edu/cits/help/javascript.cfm for instructions)
+
+FTP Installation
+
+   1. Download the SkyBlueCanvas ZIP or TAR file and extract the contents into a folder on your compter.
+   
+   2. Connect to your web server using your FTP client and upload the SkyBlueCanvas code.
+   
+   3. Change the file permissions of the entire skyblue folder to 755 (some servers may require 775). Apply the changes recursively to all directories and files in the skyblue folder.
+   
+   4. Rename the file /skyblue/htaccess.txt to .htaccess (dot htaccess) to enable SEF URLs
+   
+   5. Point your web browser to http://yourdomain.com/ or if you have installed SkyBlueCanvas in a sub-directory of your main domain, http://yourdomain.com/sub_directory_where_skyblue_is_installed/.
+   
+   6. Follow the instructions that appear on your screen. This will be a simple form you need to fill in.
+   
+   7. When you log in to the Admin Control Panel, go to Admin > Settings > Default Info, and enter the info in the form.
+   
+   8. That’s it.
+
+Command-line Installation (Advanced Users)
+
+   1. Download the tar file and place it in the root of your new website.
+   
+   2. Unpack the tarball (tar -zxf skyblue.tar.gz)
+   
+   3. Rename the file /skyblue/htaccess.txt to .htaccess (dot htaccess) to enable SEF URLs
+   
+   4. Change the owner/group of the directory contents (chown -R www:www `*`)
+   
+   5. Change the file permissions of the entire skyblue folder to 755 (some servers may require 775). Apply the changes recursively to all directories and files in the skyblue folder.
+   
+   6. Point your web browser to http://yourdomain.com/ or if you have installed SkyBlueCanvas in a sub-directory of your main domain, http://yourdomain.com/sub_directory_where_skyblue_is_installed/.
+   
+   7. Follow the instructions that appear on your screen. This will be a simple form you need to fill in.
+   
+   8. When you log in to the Admin Control Panel, go to Admin > Settings > Default Info, and enter the info in the form. This will enable emailing through your site and will set the full URL so that RSS feeds will point to your site pages.
+   
+   9. That’s it.
+
+Trouble Shooting
+
+If you get an error when you point your browser to the Setup Wizard, try setting the permissions of the /skyblue/ directory to 777. It is not recommended that you leave the permissions set to 777. The first screen of the Setup Wizard will suggest the proper settings. Once you have completed the installation, you can change the file permissions to the correct setting. If you continue to have trouble, check your hosting provider’s documentation or contact their Support Center and ask for “the correct settings for their server to allow web software to read and write files”.
+
+You are now ready to start adding your site’s content. You can log into the SkyBlueCanvas admin control panel by going to http://www.yourdomain.com/admin.php.
+
+Enjoy!
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<link rel="stylesheet" href="IiR.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<title>Instruments In Reach</title>	
+</head>
+<body onload="">
+	<center>
+	<table cellspacing=0 cellpadding=0 border=0 width=100% height=96 style="background-image:url('IiR_banner_edges.png'); background-repeat: repeat-x">
+		<tr><td align="center" width=320 height=96 style="padding-top: 0px; padding-bottom: 0px;"><img src="IiR_banner.png" valign=bottom></td></tr>
+	</table>
+<!--	<table cellspacing=0 cellpadding=4 border=0 width=100% bgcolor=#EEEEEE>
+		<tr><td align="center" style="padding-top: 6px; padding-bottom: 6px; border-bottom: 1px solid #777; border-top: 0px solid #777;" valign=bottom height=20><font style="font-size: 22px; font-family: Helvetica; color: #000000;">
+--->
+	<table cellspacing=0 cellpadding=0 border=0 width=100% height=44 style="background-image:url('blueback.png'); background-repeat: repeat-x">
+		<tr><td align="center" width=320 height=44 style="padding-top: 0px; padding-bottom: 0px;"><font style="font-size: 22px; font-family: Helvetica; color: #FFF;">
+
+<script>
+function gup( name )
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+var instrument = '';
+var t1 = gup('instrument');
+if (t1 != "") { 
+	instrument = t1; 
+} else {	
+	// no instrument! redirect to setup
+	window.location = 'setup.html';
+}
+
+document.write(instrument);
+
+document.write('</font></td></tr></table>');
+
+// set the clef to Base Clef for appropriate instruments and Treble Clef for all others
+var clef = 'TC';
+if (instrument == 'Bassoon') clef = 'BC';
+if (instrument == 'Trombone') clef = 'BC';
+if (instrument == 'Baritone') clef = 'BC';
+if (instrument == 'Tube') clef = 'BC';
+
+// setup notes array
+notes = new Array();
+names = new Array();
+
+var instrument_min = 0
+var instrument_max = 61;
+
+if (instrument == 'Flute') {
+	instrument_min = 11;
+	instrument_max = 61;
+}
+if (instrument == 'Clarinet') {
+	instrument_min = 0;
+	instrument_max = 55;
+}
+if (instrument == 'Oboe') {
+	instrument_min = 8;
+	instrument_max = 50;
+}
+if (instrument == 'Saxophone') {
+	instrument_min = 8;
+	instrument_max = 52;
+}
+if (instrument == 'Trumpet') {
+	instrument_min = 2;
+	instrument_max = 45;
+}
+if (instrument == 'Horn') {
+	instrument_min = 1;
+	instrument_max = 41;
+}
+if (instrument == 'Bassoon') {
+	instrument_min = 9;
+	instrument_max = 56;
+}
+if (instrument == 'Trombone') {
+	instrument_min = 18;
+	instrument_max = 61;
+}
+if (instrument == 'Baritone') {
+	instrument_min = 18;
+	instrument_max = 61;
+}
+if (instrument == 'Tuba') {
+	instrument_min = 18;
+	instrument_max = 44;
+}
+
+// s  = starting note for the page
+var s;
+
+var num;
+if (clef == 'TC') {
+
+	s = 21;
+
+	for (i = 0; i < 61; i++) {
+		notes[i] = 'T'+i.toString();
+	}
+
+	// TC names
+	names[0] = 'E 3';
+	names[1] = 'F 3';
+	names[2] = 'F# 3';
+	names[3] = 'Gb 3';
+	names[4] = 'G';
+	names[5] = 'G# 3';
+	names[6] = 'Ab 3';
+	names[7] = 'A 3';
+	names[8] = 'A# 3';
+	names[9] = 'Bb 3';
+	names[10] = 'B 3';
+	names[11] = 'C 4';
+	names[12] = 'C# 4';
+	names[13] = 'Db 4';
+	names[14] = 'D 4';
+	names[15] = 'D# 4';
+	names[16] = 'Eb 4';
+	names[17] = 'E 4';
+	names[18] = 'F 4';
+	names[19] = 'F# 4';
+	names[20] = 'Gb 4';
+	names[21] = 'G 4';
+	names[22] = 'G# 4';
+	names[23] = 'Ab 4';
+	names[24] = 'A 4';
+	names[25] = 'A# 4';
+	names[26] = 'Bb 4';
+	names[27] = 'B 4';
+	names[28] = 'C 5';
+	names[29] = 'C# 5';
+	names[30] = 'Db 5';
+	names[31] = 'D 5';
+	names[32] = 'D# 5';
+	names[33] = 'Eb 5';
+	names[34] = 'E 5';
+	names[35] = 'F 5';
+	names[36] = 'F# 5';
+	names[37] = 'Gb 5';
+	names[38] = 'G 5';
+	names[39] = 'G# 5';
+	names[40] = 'Ab 5';
+	names[41] = 'A 5';
+	names[42] = 'A# 5';
+	names[43] = 'Bb 5';
+	names[44] = 'B 5';
+	names[45] = 'C 6';
+	names[46] = 'C# 6';
+	names[47] = 'Db 6';
+	names[48] = 'D 6';
+	names[49] = 'D# 6';
+	names[50] = 'Eb 6';
+	names[51] = 'E 6';
+	names[52] = 'F 6';
+	names[53] = 'F# 6';
+	names[54] = 'Gb 6';
+	names[55] = 'G 6';
+	names[56] = 'G# 6';
+	names[57] = 'Ab 6';
+	names[58] = 'A 6';
+	names[59] = 'A# 6';
+	names[60] = 'Bb 6';
+
+} else {
+
+	s = 29;
+
+	for (i = 1; i < 62; i++) {
+		notes[i] = 'B'+i.toString();
+	}
+
+	// BC names
+	names[1] = 'E 1';
+	names[2] = 'F 1';
+	names[3] = 'F# 1';
+	names[4] = 'Gb 1';
+	names[5] = 'G 1';
+	names[6] = 'G# 1';
+	names[7] = 'Ab 1';
+	names[8] = 'A 1';
+	names[9] = 'A# 1';
+	names[10] = 'Bb 1';
+	names[11] = 'B 1';
+	names[12] = 'C 2';
+	names[13] = 'C# 2';
+	names[14] = 'Db 2';
+	names[15] = 'D 2';
+	names[16] = 'D# 2';
+	names[17] = 'Eb 2';
+	names[18] = 'E 2';
+	names[19] = 'F 2';
+	names[20] = 'F# 2';
+	names[21] = 'Gb 2';
+	names[22] = 'G 2';
+	names[23] = 'G# 2';
+	names[24] = 'Ab 2';
+	names[25] = 'A 2';
+	names[26] = 'A# 2';
+	names[27] = 'Bb 2';
+	names[28] = 'B 2';
+	names[29] = 'C 3';
+	names[30] = 'C# 3';
+	names[31] = 'Db 3';
+	names[32] = 'D 3';
+	names[33] = 'D# 3';
+	names[34] = 'Eb 3';
+	names[35] = 'E 3';
+	names[36] = 'F 3';
+	names[37] = 'F# 3';
+	names[38] = 'Gb 3';
+	names[39] = 'G 3';
+	names[40] = 'G# 3';
+	names[41] = 'Ab 3';
+	names[42] = 'A 3';
+	names[43] = 'A# 3';
+	names[44] = 'Bb 3';
+	names[45] = 'B 3';
+	names[46] = 'C 4';
+	names[47] = 'C# 4';
+	names[48] = 'Db 4';
+	names[49] = 'D 4';
+	names[50] = 'D# 4';
+	names[51] = 'Eb 4';
+	names[52] = 'E 4';
+	names[53] = 'F 4';
+	names[54] = 'F# 4';
+	names[55] = 'Gb 4';
+	names[56] = 'G 4';
+	names[57] = 'G# 4';
+	names[58] = 'Ab 4';
+	names[59] = 'A 4';
+	names[60] = 'A# 4';
+	names[61] = 'Bb 4';
+
+}
+
+var t2 = gup('s');
+if (t2 != "") { s = parseInt(t2); }
+
+var p = s - 1;
+if (p < instrument_min) p = instrument_min;
+var n = s + 1;
+if (n > instrument_max-5) n = instrument_max-5;
+
+document.write('<table width=100% cellspacing=0 cellpadding=0 border=0 height=38><tr height=8><td></td></tr><tr>');
+
+document.write('<td width=44 height=25 valign=middle align=right><table height=24 border=0 cellspacing=0 cellpadding=3 width=36 style="border-width: 1px 1px 1px 1px; border-color: #FFF; border-style: solid;"><tr><td style="padding-top: 0px; padding-bottom: 0px;" align=middle><font style="font-size: 12px; font-family: Helvetica; color: #000000;">&nbsp;</font></td></tr></table></td>');
+
+document.write('</tr><tr height=8><td></td></tr><tr>');
+
+document.write('<td width=44><img src="clefs/'+clef+'.gif" border=0></td>');
+
+document.write('</tr></table>');
+
+</script>
+
+<!--<td><iframe name="FRAME2" src="frame2.html" width="204" height="36" frameborder="1" scrolling="auto"></iframe></td>--->
+
+</center>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<link rel="stylesheet" href="IiR.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<title>Instruments In Reach</title>	
+</head>
+<body onload="">
+	<center>
+
+<script>
+function gup( name )
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+var instrument = 'Flute';
+var t1 = gup('instrument');
+if (t1 != "") { instrument = t1; }
+
+var t2 = gup('s');
+if (t2 != "") { s = parseInt(t2); }
+
+var alt = '';
+var show_alt = '';
+var t3 = gup('alt');
+if (t3 != "") { alt = parseInt(t3); }
+
+// set the clef to Base Clef for appropriate instruments and Treble Clef for all others
+var clef = 'TC';
+if (instrument == 'Bassoon') clef = 'BC';
+if (instrument == 'Trombone') clef = 'BC';
+if (instrument == 'Baritone') clef = 'BC';
+if (instrument == 'Tube') clef = 'BC';
+
+// setup images array
+images = new Array();
+names = new Array();
+
+if (clef == 'TC') {
+
+	// TC names
+	names[0] = 'E 3';
+	names[1] = 'F 3';
+	names[2] = 'F# / Gb 3';
+	names[3] = 'F# / Gb 3';
+	names[4] = 'G 3';
+	names[5] = 'G# / Ab 3';
+	names[6] = 'G# / Ab 3';
+	names[7] = 'A 3';
+	names[8] = 'A# / Bb 3';
+	names[9] = 'A# / Bb 3';
+	names[10] = 'B 3';
+	names[11] = 'C 4';
+	names[12] = 'C# / Db 4';
+	names[13] = 'C# / Db 4';
+	names[14] = 'D 4';
+	names[15] = 'D# / Eb 4';
+	names[16] = 'D# / Eb 4';
+	names[17] = 'E 4';
+	names[18] = 'F 4';
+	names[19] = 'F# / Gb 4';
+	names[20] = 'F# / Gb 4';
+	names[21] = 'G 4';
+	names[22] = 'G# / Ab 4';
+	names[23] = 'G# / Ab 4';
+	names[24] = 'A 4';
+	names[25] = 'A# / Bb 4';
+	names[26] = 'A# / Bb 4';
+	names[27] = 'B 4';
+	names[28] = 'C 5';
+	names[29] = 'C# / Db 5';
+	names[30] = 'C# / Db 5';
+	names[31] = 'D 5';
+	names[32] = 'D# / Eb 5';
+	names[33] = 'D# / Eb 5';
+	names[34] = 'E 5';
+	names[35] = 'F 5';
+	names[36] = 'F# / Gb 5';
+	names[37] = 'F# / Gb 35';
+	names[38] = 'G 5';
+	names[39] = 'G# / Ab 5';
+	names[40] = 'G# / Ab 5';
+	names[41] = 'A 5';
+	names[42] = 'A# / Bb 5';
+	names[43] = 'A# / Bb 5';
+	names[44] = 'B 5';
+	names[45] = 'C 6';
+	names[46] = 'C# / Db 6';
+	names[47] = 'C# / Db 6';
+	names[48] = 'D 6';
+	names[49] = 'D# / Eb 6';
+	names[50] = 'D# / Eb 6';
+	names[51] = 'E 6';
+	names[52] = 'F 6';
+	names[53] = 'F# / Gb 6';
+	names[54] = 'F# / Gb 6';
+	names[55] = 'G 6';
+	names[56] = 'G# / Ab 6';
+	names[57] = 'G# / Ab 6';
+	names[58] = 'A 6';
+	names[59] = 'A# / Bb 6';
+	names[60] = 'A# / Bb 6';
+
+}
+
+if (clef == 'BC') {
+
+	// BC names
+	names[1] = 'E 1';
+	names[2] = 'F 1';
+	names[3] = 'F# / Gb 1';
+	names[4] = 'F# / Gb 1';
+	names[5] = 'G 1';
+	names[6] = 'G# / Ab 1';
+	names[7] = 'G# / Ab 1';
+	names[8] = 'A 1';
+	names[9] = 'A# / Bb 1';
+	names[10] = 'A# / Bb 1';
+	names[11] = 'B 1';
+	names[12] = 'C 2';
+	names[13] = 'C# / Db 2';
+	names[14] = 'C# / Db 2';
+	names[15] = 'D 2';
+	names[16] = 'D# / Eb 2';
+	names[17] = 'D# / Eb 2';
+	names[18] = 'E 2';
+	names[19] = 'F 2';
+	names[20] = 'F# / Gb 2';
+	names[21] = 'F# / Gb 2';
+	names[22] = 'G 2';
+	names[23] = 'G# / Ab 2';
+	names[24] = 'G# / Ab 2';
+	names[25] = 'A 2';
+	names[26] = 'A# / Bb 2';
+	names[27] = 'A# / Bb 2';
+	names[28] = 'B 2';
+	names[29] = 'C 3';
+	names[30] = 'C# / Db 3';
+	names[31] = 'C# / Db 3';
+	names[32] = 'D 3';
+	names[33] = 'D# / Eb 3';
+	names[34] = 'D# / Eb 3';
+	names[35] = 'E 3';
+	names[36] = 'F 3';
+	names[37] = 'F# / Gb 3';
+	names[38] = 'F# / Gb 3';
+	names[39] = 'G 3';
+	names[40] = 'G# / Ab 3';
+	names[41] = 'G# / Ab 3';
+	names[42] = 'A 3';
+	names[43] = 'A# / Bb 3';
+	names[44] = 'A# / Bb 3';
+	names[45] = 'B 3';
+	names[46] = 'C 4';
+	names[47] = 'C# / Db 4';
+	names[48] = 'C# / Db 4';
+	names[49] = 'D 4';
+	names[50] = 'D# / Eb 4';
+	names[51] = 'D# / Eb 4';
+	names[52] = 'E 4';
+	names[53] = 'F 4';
+	names[54] = 'F# / Gb 4';
+	names[55] = 'F# / Gb 4';
+	names[56] = 'G 4';
+	names[57] = 'G# / Ab 4';
+	names[58] = 'G# / Ab 4';
+	names[59] = 'A 4';
+	names[60] = 'A# / Bb 4';
+	names[62] = 'A# / Bb 4';
+
+}
+
+if (instrument == 'Oboe') {
+
+    images[15] = 'oboe7';
+    images[16] = 'oboe7';
+    images[18] = 'oboe10';
+    images[32] = 'oboe22';
+    images[33] = 'oboe22';
+    images[35] = 'oboe25';
+
+}
+
+if (instrument == 'Clarinet') {
+
+    images[0] = 'clar2';
+    images[1] = 'clar5';
+    images[2] = 'clar7';
+    images[3] = 'clar7';
+    images[10] = 'clar14';
+    images[15] = 'clar19';
+    images[16] = 'clar19';
+    images[27] = 'clar31';
+    images[28] = 'clar35';
+    images[29] = 'clar37';
+    images[30] = 'clar37';
+    images[36] = 'clar44';
+    images[37] = 'clar44';
+    images[42] = 'clar49';
+    images[43] = 'clar49';
+    images[49] = 'clar56';
+    images[50] = 'clar56';
+
+	if (s == '0' || s == '2' || s == '3' || s == '15' || s == '16' || s == '27' || s == '29' || s == '30' || s == '42' || s == '43')
+		show_alt = '1';
+
+	if (alt != '') {
+
+		images[0] = 'clar3';
+		images[2] = 'clar8';
+		images[3] = 'clar8';
+		images[15] = 'clar20';
+		images[16] = 'clar20';
+		images[27] = 'clar33';
+		images[29] = 'clar38';
+		images[30] = 'clar38';
+		images[42] = 'clar50';
+		images[43] = 'clar50';
+		
+	}
+
+}
+
+document.write('<table cellspacing=0 cellpadding=0 border=0><tr>');
+
+if (show_alt != '' && alt != '') {
+	document.write('<td width=40 align=middle><a href="screen4.html?instrument='+instrument+'&s='+s+'"><img src="left.png" border=0"></a></td><td width=40 align=middle><img src="'+instrument+'/'+images[s]+'.png" border=0"></td>');
+} else {
+	document.write('<td width=40 align=middle><a href="screen3.html?instrument='+instrument+'&s='+s+'"><img src="left.png" border=0"></a></td><td width=40 align=middle><img src="'+instrument+'/'+images[s]+'.png" border=0"></td>');
+}
+
+if (show_alt != '' && alt == '') {
+	document.write('<td width=40 align=middle><a href="screen4.html?alt=2&instrument='+instrument+'&s='+s+'"><img src="right.png" border=0"></a></td>');
+}
+
+document.write('</tr></table>');
+
+</script>
+
+</center>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+11.3.2008,jrtb,version release candidate 1.0
+
+10.29.2008,jrtb,version3.1
+
+  Note scrolling corrected, memory optimized to prevent crashing
+
+10.21.2008,jrtb,version 3
+
+  Splash page added
+
+  Notes view scrolling now works correctly, including the clicking sound.
+
+10.10.2008,jrtb,version 2
+
+  The Instruments menu is now a native table view and works like
+  other iPhone apps (and allows the user to click anywhere in the
+  row).
+
+  Instrument selection is preserved as an application preference
+  and loaded when the app is opened (if an instrument has been
+  chosen before).
+
+  The notes can now be scrolled as requested. I haven't been able
+  to implement the clicking sound when the user scrolls, but am
+  still researching that.
+
+  The note name has been shifted into the menu bar to create space
+  for the entire instrument fingering view to show.
+
+  The notes screen and the instrument fingering screens are
+  implemented as web views. The pushing and moving aspect of these
+  screens is the standard iPhone web navigation experience (note
+  that when you browse web pages on Safari, the same behavior
+  occurs). If this is still something that you would like to
+  prevent, I can research other methods of displaying these
+  screens.
+
+  I have removed the horizontal views for all the screens and the
+  application in general. The application now stays in Portrait
+  orientation.
+
+  Note: I chose the black style for the navigation bars and
+  buttons. The other available style is blue. Let me know if you
+  would prefer that and I'll change it.
+
+9.27.2008,jrtb,first push
+
+all features in IIR_specs.doc implemented with 2 exceptions:
+
+1) sliding doesn't work for scrolling through the notes. safari doesn't allow or show scroll bars. you can scroll with a double touch swipe, but this doesn't look good in a hybrid interface and is not commonly known by users.
+2) the app doesn't currently make a clicking sound when the user goes to the next or previous notes.
+
+note that only 5 instruments are present due to the lack of additional fingering images.
